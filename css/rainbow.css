@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.rainbow{
+    position: relative;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100%;
+   width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.rainbow:after{
+    position: absolute;
+    content: '';
+    box-shadow: 
+     0 0 0 30px violet,
+     0 0 0 60px indigo,
+     0 0 0 90px blue,
+     0 0 0 120px green,
+     0 0 0 150px yellow,
+     0 0 0 180px orange,
+     0 0 0 210px red
+    ;
+
+    opacity: 0.6;
+    overflow: hidden;
+    border-radius: 60%;
+    width: 60%;
+    height: 60%;
+    top: 80%;
+    left: 25%;
+}
+
+#icon{
+    font-size: 70px;
+}
